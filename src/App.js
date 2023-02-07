@@ -4,7 +4,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      Hello
+      <Router> 
+        <Routes>
+          <Route index element={<h1>Hello World</h1>}></Route>
+          <Route path='movie/:id' element={<h1>Movie details page</h1>}></Route>
+          <Route path='movies/:type' element={<h1>Movie list page</h1>}></Route>
+          <Route path='/*' element={<h1>Error Page</h1>}></Route>
+        </Routes>
+     </Router>
     </div>
   );
 }
