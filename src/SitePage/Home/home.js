@@ -9,7 +9,7 @@ const Home = () => {
 
   const [popularMovies, setPopularMovies] = useState([])
 
-  useEffect(() => {
+  useEffect(() => {   //to get movie api for the database in app 
     fetch('https://api.themoviedb.org/3/movie/popular?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US')
     .then(res => res.json())
     .then(data => setPopularMovies(data.results))
@@ -41,7 +41,7 @@ const Home = () => {
                 {movie ? movie.release_date : ""}
                  <span className="posterImage__rating">
                   {movie ? movie.vote_average :""}
-                  <i className="fas fa-star" />{" "}
+                  <i className="fas fa-star" style={{color: '#F2CD5C'}}/>{" "}
                  </span>
                </div>
                <div className="posterImage__description">{movie ? movie.overview : ""}</div>
