@@ -86,13 +86,6 @@
     margin-left: auto;
 }
 
-.movie__links {
-    position: relative;
-    bottom: 120px;
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
-}
 
 .movie__heading {
     font-size: 2.2rem;
@@ -123,23 +116,3 @@
     margin-left: 1.4rem;
 }
 
-.movie__production {
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 4rem;
-}
-
-
-.movie__productionComapany {
-    width: 200px;
-    margin: 2rem;
-}
-
-.productionCompanyImage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
