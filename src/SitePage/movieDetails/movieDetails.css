@@ -36,7 +36,7 @@
 }
 
 .movie__detailRight {
-    color: white;
+    color: #16FF00;
     display: flex;
     flex-direction: column;
     height: 450px;
@@ -132,3 +132,14 @@
 }
 
 
+.movie__productionComapany {
+    width: 200px;
+    margin: 2rem;
+}
+
+.productionCompanyImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
