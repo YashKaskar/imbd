@@ -13,7 +13,7 @@ const Header = () => {
       </div>
       <div className="header-right">
         <span className='user_avatar'>  
-        <i className="fas fa-user"/>
+        <i className="fas fa-user" />
         </span>
       </div>
     </div>
