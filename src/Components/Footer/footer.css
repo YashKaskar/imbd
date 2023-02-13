@@ -1,0 +1,26 @@
+.footer{
+        background-color: black;
+        display: flex;
+        justify-content: space-around; 
+}
+
+.footer-name{   
+    font-size: 26px;
+    margin-top: 3.6rem;
+}
+
+.footer-right{  
+    font-size: 19px;
+    margin: 2rem;
+}
+.footer-right0{
+    margin: 0.5rem;
+}
+
+.footer-right1{
+    margin: 0.5rem;
+}
+
+.footer-right2{
+    margin: 0.5rem;
+}
