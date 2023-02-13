@@ -5,6 +5,7 @@ import Home from './SitePage/Home/home';
 import MovieList from './Components/moiveList/movieList';
 import Movie from './SitePage/movieDetails/movieDetails';
 
+
 function App() {
   return (
     <div className="App">
