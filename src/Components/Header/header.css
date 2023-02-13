@@ -27,3 +27,8 @@ a > span:hover{
     cursor: pointer;
 }
 
+.user_avatar{   
+    font-size: 1.4rem;
+    margin-right: 5rem;
+}
+
