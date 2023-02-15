@@ -32,3 +32,9 @@ a > span:hover{
     margin-right: 5rem;
 }
 
+.userimage {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        margin-right: 6rem;
+}

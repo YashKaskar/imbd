@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './header.css'
+import Avatar from '../image/avatar.png'
 
 const Header = () => { 
   return(
@@ -11,10 +12,8 @@ const Header = () => {
         < Link to= '/movies/top_rated' style={{ textDecoration: 'none' }} ><span>Top Rated</span></Link>
         < Link to='/movies/upcoming' style={{ textDecoration: 'none' }} ><span>Upcoming</span></Link>
       </div>
-      <div className="header-right">
-        <span className='user_avatar'>  
-        <i className="fas fa-user" />
-        </span>
+      <div className="header-right"> 
+        <img src={Avatar} alt="userprofile" className='userimage' />
       </div>
     </div>
   )
