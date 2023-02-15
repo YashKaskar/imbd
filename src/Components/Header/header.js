@@ -2,8 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './header.css'
 import Avatar from '../image/avatar.png'
+import { motion } from "framer-motion";
+
+
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { app } from '../../firebase/firebase.config'
+
 
 const Header = () => { 
+
+  const firebaseAuth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  const login = async () => {
+    const result = await signInWithPopup(firebaseAuth, provider)
+    console.log(result)
+  }
+
+
+
   return(
     <div className='header'> 
       <div className="header-left">
@@ -13,7 +30,13 @@ const Header = () => {
         < Link to='/movies/upcoming' style={{ textDecoration: 'none' }} ><span>Upcoming</span></Link>
       </div>
       <div className="header-right"> 
-        <img src={Avatar} alt="userprofile" className='userimage' />
+        <motion.img
+          whileTap={{ scale: 0.7 }}
+          src={Avatar}
+          className='userimage'
+          alt="userprofile"
+          onClick={login}
+        />
       </div>
     </div>
   )
