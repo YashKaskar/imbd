@@ -1,12 +1,24 @@
-import React, { useContext, useReducer, createContext } from "react";
-import { initalState } from './InitalState';
-
-
-export const StateContext = createContext();
-export const StateProvider = (reducer, initalState, children) => (
-    <StateContext.Provider value={useReducer(reducer, initalState)}>
-        {children}
-    </StateContext.Provider>
-);
-
-export const useStateValue = () => useContext(StateContext);
+export const actionType = {
+    SET_USER: "SET_USER",
+    
+  };
+  
+  const reducer = (state, action) => {
+    // console.log(action);
+  
+    switch (action.type) {
+      case actionType.SET_USER:
+        return {
+          ...state,
+          user: action.user,
+        };
+  
+     
+  
+      default:
+        return state;
+    }
+  };
+  
+  export default reducer;
+  
