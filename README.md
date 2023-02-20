@@ -14,6 +14,7 @@ IMDb is an online database of information related to films, television series â€
 4. How to use Carousel and Card in the project 
 5. Fetch the API from the database
 6. Using React libraries
+7. Using firebase to Sign In
 
 **To Watch this project**
 Link : (https://imdbcloneyashkaskar.netlify.app/)
